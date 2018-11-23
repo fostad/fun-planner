@@ -16,10 +16,10 @@ const strings = new LocalizedStrings({
 
 class DatePicker extends React.Component {
   render() {
-    const { disabled, scheduled, onChange } = this.props;
+    const { disabled, selected, onChange } = this.props;
     return (
       <ReactDatePicker
-        disabled={disabled} startDate={moment()} selected={scheduled}
+        disabled={disabled} startDate={moment()} selected={moment(selected).format()}
         onChange={onChange} todayButton={strings.today}
         placeholder={strings.selectDate}
         style={{height: '10px', border: 'none', borderBottom: '2px solid #d0d0d0'}}

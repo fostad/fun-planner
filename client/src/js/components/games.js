@@ -34,7 +34,7 @@ const Games = () => {
               return a.name > b.name ? 1 : a.name < b.name ? -1 : 0;
             }).map(game => {
               return (
-                <div><Game game={game} /></div>
+                <div><Game key={game.id} game={game} /></div>
               );
             }) : null
           }

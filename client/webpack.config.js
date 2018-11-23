@@ -8,6 +8,11 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
+  mode: 'development',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  },
   entry: [
     './src/js/index.js'
   ],

@@ -46,7 +46,7 @@ class Event extends React.Component {
                 />
               </div>
               <div style={{flex: 1, width: '90%', marginTop: '5px'}}>
-                <DatePicker scheduled={date}/>
+                <DatePicker selected={date}/>
               </div>
             </div>
             <div style={{flex: 1}}>

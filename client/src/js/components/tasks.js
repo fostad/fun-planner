@@ -34,7 +34,7 @@ const Tasks = () => {
               return a.id > b.id ? 1 : a.id < b.id ? -1 : 0;
             }).map(task => {
               return (
-                <div><Task task={task} /></div>
+                <div><Task key={task.id} task={task} /></div>
               );
             }) : null
           }

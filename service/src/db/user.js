@@ -8,12 +8,17 @@ const getAllUsers = () => {
   return getAll('user');
 };
 
-const getUser = id => {
+const getUserById = id => {
   return getByKey(id, 'id', 'user');
+};
+
+const getUserByEmail = email => {
+  return getByKey(email, 'email', 'user');
 };
 
 module.exports = {
   saveUser,
   getAllUsers,
-  getUser
+  getUserById,
+  getUserByEmail
 };
